@@ -7,18 +7,6 @@ html,body{
 	min-height:500px;
 }
 
-body {
-    -webkit-animation-delay: 0.1s;
-    -webkit-animation-name: fontfix;
-    -webkit-animation-duration: 0.1s;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: linear;
-}
-
-@-webkit-keyframes fontfix {
-    from { opacity: 1; }
-    to   { opacity: 1; }
-}
 
 #page{
 	width:100%;
@@ -132,6 +120,12 @@ body {
 }
 .mobile{
 	background-image: url('../images/mobile.png');
+	background-repeat: no-repeat;
+	background-size: 40px 40px;
+}
+
+.mobile{
+	background-image: url('../images/menu36.png');
 	background-repeat: no-repeat;
 	background-size: 40px 40px;
 }
