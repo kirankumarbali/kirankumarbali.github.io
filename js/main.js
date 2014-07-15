@@ -10,6 +10,13 @@ $(document).ready(function(){
 	    auto:true  
 	  });
 	  
+	  $(document).on('click', '.find-me ul li.linkedin',function(){
+	  	window.open("https://www.linkedin.com/in/kirankumarbali",_blank);
+	  });
+	  
+	  $(document).on('click', '.find-me ul li.fb',function(){
+	  	window.open("https://www.facebook.com/kirankumarbali",_blank);
+	  });
 	  
 	  $(document).on('click','#me .card-cover',function(){
 	  		var $this = $(this).parents('.card:first');
