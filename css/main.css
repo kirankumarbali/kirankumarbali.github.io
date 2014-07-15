@@ -146,6 +146,8 @@ html,body{
 	padding:0px;
 	outline:none;
 	color:#fff;
+	width:40px;
+	height:40px;
 }
 
 .find-me ul li a:hover{
