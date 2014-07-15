@@ -139,6 +139,24 @@ html,body{
 	cursor:pointer;
 }
 
+.find-me ul li a{
+	border:none;
+	margin:0px;
+	text-decoration: none;
+	padding:0px;
+	outline:none;
+	color:#fff;
+}
+
+.find-me ul li a:hover{
+	text-decoration: none;
+	color:#fff;
+}
+
+.find-me ul li a:visited{
+	text-decoration: none;
+	color:#fff;
+}
 
 
 .h1{	
