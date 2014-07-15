@@ -1,0 +1,247 @@
+html,body{
+	margin:0px;
+	padding:0px;
+	height:100%;
+	width:100%;
+	min-width:1000px;
+	min-height:500px;
+}
+
+#page{
+	width:100%;
+	height:100%;
+	position:relative;
+	font-family: 'Open Sans', sans-serif;
+	overflow-x: hidden;
+}
+
+.card{	
+	width:4000px;
+	height:100%;
+	position:absolute;
+	overflow-x:hidden;
+	top:0px;
+	padding: 0px 0px 0px 50px;
+    background-color: #ecf0f1;
+}
+
+.card .card-cover{
+	position:absolute;	
+	top:0px;
+	left:0px;	
+	width:155px;
+	height:100%;	
+	z-index:100;
+	cursor:pointer;
+}
+
+.card .card-cover .card-cover-anchor{
+	width: 155px;
+	height: 150px;
+	margin-top:-75px;
+	position:absolute;
+	top:50%;
+	left:0px;
+	text-align: center; 
+}
+
+.card .card-active-content{
+	height:425px;position:absolute;top:50%;margin-top:-220px;
+	z-index: 50;
+	left: 155px;
+}
+
+.card .card-cover-anchor img{
+	opacity: 1;
+}
+
+#me{
+	
+	z-index: 10;
+}
+#edu{
+	color:#FFFFFF;
+	margin-left:400px;
+	background-color: #2980b9 ;
+	z-index: 20;
+	-moz-box-shadow:    -3px -3px 3px -3px #000;
+    -webkit-box-shadow: -3px -3px 3px -3px #000;
+    box-shadow:         -3px -3px 3px -3px #000;
+}
+#skills{
+	color:#FFFFFF;
+	margin-left:550px;
+	background-color: #27ae60;
+	z-index: 30;
+	-moz-box-shadow:    -3px -3px 3px -3px #000;
+    -webkit-box-shadow: -3px -3px 3px -3px #000;
+    box-shadow:         -3px -3px 3px -3px #000;
+}
+#projects{
+	color:#FFFFFF;
+	margin-left:700px;
+	background-color: #34495e;
+	z-index: 40;
+	-moz-box-shadow:    -3px -3px 3px -3px #000;
+    -webkit-box-shadow: -3px -3px 3px -3px #000;
+    box-shadow:         -3px -3px 3px -3px #000;
+}
+#contact{
+	color:#FFFFFF;
+	margin-left:850px;
+	background-color:#8e44ad;
+	z-index: 50;
+	-moz-box-shadow:    -3px -3px 3px -3px #000;
+    -webkit-box-shadow: -3px -3px 3px -3px #000;
+    box-shadow:         -3px -3px 3px -3px #000;
+    
+}
+
+.email{
+	background-image: url('../images/email.png');
+	background-repeat: no-repeat;
+	background-size: 40px 40px;
+}
+.linkedin{
+	background-image: url('../images/linkedin.png');
+	background-repeat: no-repeat;
+	background-size: 40px 40px;
+}
+.fb{
+	background-image: url('../images/facebook.png');
+	background-repeat: no-repeat;
+	background-size: 40px 40px;
+}
+.mobile{
+	background-image: url('../images/mobile.png');
+	background-repeat: no-repeat;
+	background-size: 40px 40px;
+}
+
+.find-me{
+	margin-top:90px;
+}
+.find-me ul{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+.find-me ul li{
+	float:left;
+	width:40px;
+	height:40px;
+	margin-right:10px;
+	cursor:pointer;
+}
+
+
+
+.h1{	
+	font-size:36px;
+	line-height:40px;
+}
+.h2{
+	font-size: 24px;
+	line-height:28px;
+}
+.h3{
+	font-size: 18px;
+	line-height: 22px;
+}
+.h4{
+	font-size: 14px;
+	line-height: 18px;
+}
+.h5{
+	font-size: 12px;
+	line-height:15px;
+}
+
+.light{
+	font-weight:300;
+}
+.normal{
+	font-weight:400;
+}
+.semi-bold{
+	font-weight:600;
+}
+.bold{
+	font-weight:700;
+}
+.extra-bold{
+	font-weight:800;
+}
+
+
+.tags{
+	margin:0;
+	padding:0;
+	list-style:none;
+	position:relative;
+	margin-top:10px;
+	width: 325px;
+	display:inline-block;
+	padding-bottom: 15px;
+}
+
+.tags li, .tags a{
+	float:left;
+	height:20px;
+	line-height:20px;
+	position:relative;
+	font-size:11px;
+	margin-top: 7px;
+}
+
+.tags a{
+	margin-left:12px;
+	margin-right:10px;
+	padding:0 10px 0 12px;
+	background:#0089e0;
+	color:#fff;
+	text-decoration:none;
+	font-size: 12px;	
+	font-family: 'Open Sans', sans-serif;
+	font-weight:300;
+	-moz-border-radius-bottomright:4px;
+	-webkit-border-bottom-right-radius:4px;	
+	border-bottom-right-radius:4px;
+	-moz-border-radius-topright:4px;
+	-webkit-border-top-right-radius:4px;	
+	border-top-right-radius:4px;	
+}
+
+.tags a:before{
+	content:"";
+	float:left;
+	position:absolute;
+	top:0;
+	left:-12px;
+	width:0;
+	height:0;
+	border-color:transparent #0089e0 transparent transparent;
+	border-style:solid;
+	border-width:10px 12px 10px 0;		
+}
+
+.tags a:after{
+	content:"";
+	position:absolute;
+	top:8px;
+	left:0;
+	float:left;
+	width:4px;
+	height:4px;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	border-radius:2px;
+	background:#fff;
+	-moz-box-shadow:-1px -1px 2px #004977;
+	-webkit-box-shadow:-1px -1px 2px #004977;
+	box-shadow:-1px -1px 2px #004977;
+}
+
+.tags a:hover{background:#555;}	
+
+.tags a:hover:before{border-color:transparent #555 transparent transparent;}
