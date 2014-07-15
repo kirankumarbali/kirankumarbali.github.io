@@ -10,6 +10,7 @@ $(document).ready(function(){
 	    auto:true  
 	  });
 	  
+	  
 	  $(document).on('click','#me .card-cover',function(){
 	  		var $this = $(this).parents('.card:first');
 	  		var $active = $('.card.active');
