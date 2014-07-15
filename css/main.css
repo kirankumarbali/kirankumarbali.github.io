@@ -96,6 +96,11 @@ html,body{
     box-shadow:         -3px -3px 3px -3px #000;
     
 }
+#cover{
+	margin-left:1000px;
+	background-color:#8e44ad;
+	z-index: 50;
+}
 
 .email{
 	background-image: url('../images/email.png');
