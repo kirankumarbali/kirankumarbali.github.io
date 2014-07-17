@@ -130,6 +130,7 @@ $(document).ready(function(){
 	  
 	  $('.more').toolbar({
 		content: '#more-options', 
-		position: 'top'
+		position: 'right',
+		hideOnClick: true
 	});
 });
