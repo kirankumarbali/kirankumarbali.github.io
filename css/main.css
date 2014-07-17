@@ -128,7 +128,7 @@ html,body{
 	background-image: url('../images/more.png');
 	background-repeat: no-repeat;
 	background-size: 40px 30px;
-	background-position: center center;
+	background-position: center 7px;
 }
 
 .find-me{
