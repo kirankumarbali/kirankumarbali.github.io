@@ -128,7 +128,7 @@ $(document).ready(function(){
 	  		$contact.animate({marginLeft:"600px"},{duration:500,easing:"easeOutQuad",queue:false});
 	  });
 	  
-	  $('#format-toolbar').toolbar({
+	  $('.more').toolbar({
 		content: '#more-options', 
 		position: 'top',
 		hideOnClick: true
