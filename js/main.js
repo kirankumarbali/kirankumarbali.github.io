@@ -129,7 +129,7 @@ $(document).ready(function(){
 	  });
 	  
 	  $('#format-toolbar').toolbar({
-		content: '#format-toolbar-options', 
+		content: '#more-options', 
 		position: 'top',
 		hideOnClick: true
 	});
