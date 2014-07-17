@@ -125,9 +125,9 @@ html,body{
 }
 
 .more{
-	background-image: url('../images/small143.png');
+	background-image: url('../images/more.png');
 	background-repeat: no-repeat;
-	background-size: 40px 40px;
+	background-size: 40px 30px;
 }
 
 .find-me{
