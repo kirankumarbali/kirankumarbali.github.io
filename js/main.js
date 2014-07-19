@@ -127,10 +127,4 @@ $(document).ready(function(){
 	  		$projects.animate({marginLeft:"450px"},{duration:500,easing:"easeOutQuad",queue:false});
 	  		$contact.animate({marginLeft:"600px"},{duration:500,easing:"easeOutQuad",queue:false});
 	  });
-	  
-	  $('.more').toolbar({
-		content: '#more-options', 
-		position: 'right',
-		hideOnClick: true
-	});
 });
