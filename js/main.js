@@ -127,4 +127,31 @@ $(document).ready(function(){
 	  		$projects.animate({marginLeft:"450px"},{duration:500,easing:"easeOutQuad",queue:false});
 	  		$contact.animate({marginLeft:"600px"},{duration:500,easing:"easeOutQuad",queue:false});
 	  });
+	  
+	  $(document).on('click','.send-msg',function(){
+	  		var msg = $.trim($('#msg-box').val());
+	  		var name = $.trim($('#name-box').val());
+	  		if(msg!=""){
+	  			$('#contact-box').addClass('mask');
+				$('#loading-box').show();
+	  			$.ajax({
+				  dataType: 'jsonp',
+				  url: "http://getsimpleform.com/messages/ajax?form_api_token=f866fff55c50a425e14e2b4007fc2c73",
+				  data: {
+				    name: name,
+				    message: msg,
+				  }
+				}).done(function() {
+				  //callback which can be used to show a thank you message
+				  //and reset the form
+				  $('#contact-box').removeClass('mask');
+				  $('#msg-box,#name-box').val("");
+				  $('#loading-box').hide();
+				  alert("Thank you, I have received your message, will reply soon.");
+				});
+	  		}else{
+	  			alert("Please enter a valid message.");
+	  		}
+	  		
+	  });
 });
