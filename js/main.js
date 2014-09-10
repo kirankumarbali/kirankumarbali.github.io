@@ -1,4 +1,15 @@
 
+function showAnim(x) {
+    $('#animText').removeClass().css('visibility','visible').addClass(x + ' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+      $(this).removeClass();
+    });
+};
+function hideAnim(x) {
+    $('#animText').removeClass().show().addClass(x + ' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+      $(this).css('visibility','hidden').removeClass();
+    });
+};
+
 
 $(document).ready(function(){
 	$('.slides').bxSlider({
@@ -10,6 +21,13 @@ $(document).ready(function(){
 	    auto:true  
 	  });
 	  
+	  $('.mobile,.email').mouseenter(function(){
+	  	$("#animText").text($(this).attr('data-title'));
+	  	showAnim('lightSpeedIn');
+	  });
+	  $('.mobile,.email').mouseleave(function(){
+	  	$("#animText").css('visibility','hidden').removeClass();
+	  });
 	  
 	  $(document).on('click','#me .card-cover',function(){
 	  		var $this = $(this).parents('.card:first');
