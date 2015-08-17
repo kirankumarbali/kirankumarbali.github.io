@@ -157,7 +157,7 @@ $(document).ready(function(){
 				  url: "http://getsimpleform.com/messages/ajax?form_api_token=f866fff55c50a425e14e2b4007fc2c73",
 				  data: {
 				    name: name,
-				    message: msg,
+				    message: msg
 				  }
 				}).done(function() {
 				  //callback which can be used to show a thank you message
