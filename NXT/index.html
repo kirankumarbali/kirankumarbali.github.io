@@ -9,6 +9,9 @@
         <meta name="keywords" content="slit slider, plugin, css3, transitions, jquery, fullscreen, autoplay" />
         <meta name="author" content="Codrops" />
         <link rel="shortcut icon" href="../favicon.ico"> 
+        <link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Wendy+One' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Chicle|Lato:700i" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
         <link rel="stylesheet" type="text/css" href="css/style.css" />
         <link rel="stylesheet" type="text/css" href="css/custom.css" />
@@ -53,22 +56,40 @@
 				
 					<div class="sl-slide bg-1" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
 						<div class="sl-slide-inner">
-							<div class="deco" data-icon="H"></div>
-							<h2>Ready for Inauguration</h2>
-							<blockquote><p>Great things in Business are never done by single person. They're done by team of people.</p><cite>Steve Jobs</cite></blockquote>
-						</div>
+							 <div style="width:1000px;height:450px;position:absolute;top:60%;left:50%;margin-top:-225px;margin-left:-500px;color: #fff;text-align: center;font-family: 'Segoe UI'">
+							 	
+							 </div>
+							 <div class="ribbon" style="position:absolute;top:60%;left:0%;width:100%; display: none;"><img src="images/ribbon.png" width="100%" /></div>
+															 
+								<div class="container1">
+								  <div class="balloon">
+								    <div><span>â˜º</span></div>
+								    <div><span>W</span></div>
+								    <div><span>E</span></div>
+								    <div><span>L</span></div>
+								    <div><span>C</span></div>
+								    <div><span>O</span></div>
+								    <div><span>M</span></div>
+								    <div><span>E</span></div>
+								    <div><span>!</span></div>
+								  </div>
+								</div>
+						</div> 
 					</div>
 					
 					<div class="sl-slide bg-2" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
 						<div class="sl-slide-inner">
-							<div class="deco" data-icon="q"></div>
-							<div class="aug-wall">
-								<h1>NXT Studio Hyderabad</h1>
-								<div style="font-size:14px;padding-top:30px;letter-spacing: 3px;font-family: 'Segoe UI';line-height: 32px;">Inaugurated by</div>
-								<h4 style="font-size:20px;letter-spacing: 5px;font-family: 'Segoe UI';line-height: 32px;">Naveen Gullapalli</h3>
-								<div style="font-size:18px;">&amp;</div>
-								<h4 style="font-size:20px;letter-spacing: 5px;font-family: 'Segoe UI';line-height: 32px;">Deshmukh, Subodh</h3>
-							</div>
+							<div style="width: 100%;height:100%;position: absolute;top:0px;left:0px;background-color:#111;opacity:0.9;">
+								<div style="width:1000px;height:450px;position:absolute;top:50%;left:50%;margin-top:-225px;margin-left:-500px;color: #fff;text-align: center;font-family: 'Segoe UI'">
+								 	
+								 	<div style="font-family: 'Lato';font-size:36px;">4<sup>th</sup> April 2018</div>
+								 	<div style="font-family: 'Lato'; font-size:84px;font-weight:700;">NKC NXT Studio</div>
+								 	<div style="font-family: 'Oleo Script';font-size:36px;margin-top:30px;">Inaugurated by</div>
+								 	<div style="font-family: 'Lato';font-size:36px; font-weight: 500;margin-top:30px;">Subodh Deshmukh</div>
+								 	<div style="font-family: 'Lato';font-size:24px; font-weight: 100;">Head Global Development Hyderabad, India</div>
+								 	<h2></h2>
+								 </div>
+							</div>							
 						</div>
 					</div>
 					
@@ -76,6 +97,16 @@
 
 			</div><!-- /slider-wrapper -->
 
+
+			<audio id="bgm1" hidden loop="true">
+			     <source src="media/bgm1.mp3" type="audio/mpeg">
+		    </audio>
+		    
+		    <audio id="bgm2" hidden loop="true">
+			     <source src="media/bgm2.mp3" type="audio/mpeg">
+		    </audio>
+		    
+		    
         </div>
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 		<script type="text/javascript" src="js/jquery.ba-cond.min.js"></script>
@@ -201,6 +232,13 @@
 				    if (t.total <= 0) {
 				      clearInterval(timeinterval);
 				      $('.x-timer').remove();
+				      $('#bgm1')[0].pause();
+				      $('#bgm2')[0].play();
+				      $('.container1').animate({top:'12%'},8000,function(){
+				      	$('.ribbon').show(2000);
+				      });
+				    }else if(t.total < 10000){
+				    	$('#bgm1')[0].volume = t.seconds * 0.1;
 				    }
 				  }
 				
@@ -208,7 +246,9 @@
 				  var timeinterval = setInterval(updateClock, 1000);
 				}
 				
-				var deadline = new Date(Date.parse(new Date()) + 10 * 1000);
+				var deadline = new Date(Date.parse(new Date()) + 2 * 1000);
+				//var deadline = new Date('March 29 2018 16:56');
+				$('#bgm1')[0].play();
 				initializeClock('clockdiv', deadline);
 			
 			});
