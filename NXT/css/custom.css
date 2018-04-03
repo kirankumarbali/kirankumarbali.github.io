@@ -270,6 +270,7 @@
 .demo-1 .bg-1 .sl-content-slice {
 	background-image: url('../images/bg1.jpg');
 	background-repeat: no-repeat;
+	background-size:100% 100%;
 }
 
 /* Second Slide */
@@ -277,7 +278,7 @@
 .demo-1 .bg-2 .sl-content-slice {
 	background-image: url('../images/lab.jpg');
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: 100% 100%;
 }
 
 .demo-1 .bg-2 [data-icon]:after,
@@ -633,6 +634,7 @@
   position: relative;
   font-family: 'Wendy One', sans-serif;
   top:100%;
+  z-index:101;
 }
 .balloon {
   width: 1138px;
@@ -654,7 +656,8 @@
 }
 .balloon > div:nth-child(1) {
   background: rgba(182, 15, 97, 0.9);
-  left: 0;
+  left: 0;  
+  top: 80px;
   box-shadow: inset 10px 10px 10px rgba(135, 11, 72, 0.9);
   -webkit-animation: balloon1 6s ease-in-out infinite;
   -moz-animation: balloon1 6s ease-in-out infinite;
@@ -667,6 +670,7 @@
 .balloon > div:nth-child(2) {
   background: rgba(242, 112, 45, 0.9);
   left: 120px;
+  top: 20px;
   box-shadow: inset 10px 10px 10px rgba(222, 85, 14, 0.9);
   -webkit-animation: balloon2 6s ease-in-out infinite;
   -moz-animation: balloon2 6s ease-in-out infinite;
@@ -679,6 +683,7 @@
 .balloon > div:nth-child(3) {
   background: rgba(45, 181, 167, 0.9);
   left: 240px;
+  top: 60px;
   box-shadow: inset 10px 10px 10px rgba(35, 140, 129, 0.9);
   -webkit-animation: balloon4 6s ease-in-out infinite;
   -moz-animation: balloon4 6s ease-in-out infinite;
@@ -690,7 +695,8 @@
 }
 .balloon > div:nth-child(4) {
   background: rgba(190, 61, 244, 0.9);
-  left: 360px;
+  left: 360px;  
+  top: 100px;
   box-shadow: inset 10px 10px 10px rgba(173, 14, 240, 0.9);
   -webkit-animation: balloon1 5s ease-in-out infinite;
   -moz-animation: balloon1 5s ease-in-out infinite;
@@ -702,7 +708,8 @@
 }
 .balloon > div:nth-child(5) {
   background: rgba(180, 224, 67, 0.9);
-  left: 480px;
+  left: 480px;  
+  top: 10px;
   box-shadow: inset 10px 10px 10px rgba(158, 206, 34, 0.9);
   -webkit-animation: balloon3 5s ease-in-out infinite;
   -moz-animation: balloon3 5s ease-in-out infinite;
@@ -714,7 +721,8 @@
 }
 .balloon > div:nth-child(6) {
   background: rgba(242, 194, 58, 0.9);
-  left: 600px;
+  left: 600px;  
+  top: 120px;
   box-shadow: inset 10px 10px 10px rgba(234, 177, 15, 0.9);
   -webkit-animation: balloon2 3s ease-in-out infinite;
   -moz-animation: balloon2 3s ease-in-out infinite;
@@ -727,6 +735,7 @@
 .balloon > div:nth-child(7) {
   background: rgba(182, 15, 97, 0.9);
   left: 720px;
+  top: 220px;
   box-shadow: inset 10px 10px 10px rgba(135, 11, 72, 0.9);
   -webkit-animation: balloon1 6s ease-in-out infinite;
   -moz-animation: balloon1 6s ease-in-out infinite;
@@ -739,6 +748,7 @@
 .balloon > div:nth-child(8) {
   background: rgba(242, 112, 45, 0.9);
   left: 840px;
+  top: 160px;
   box-shadow: inset 10px 10px 10px rgba(222, 85, 14, 0.9);
   -webkit-animation: balloon2 6s ease-in-out infinite;
   -moz-animation: balloon2 6s ease-in-out infinite;
@@ -751,6 +761,7 @@
 .balloon > div:nth-child(9) {
   background: rgba(45, 181, 167, 0.9);
   left: 960px;
+  top: 20px;
   box-shadow: inset 10px 10px 10px rgba(35, 140, 129, 0.9);
   -webkit-animation: balloon4 6s ease-in-out infinite;
   -moz-animation: balloon4 6s ease-in-out infinite;
